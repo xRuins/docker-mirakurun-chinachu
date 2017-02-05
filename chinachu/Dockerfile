@@ -17,7 +17,7 @@ RUN set -x \
 		procps \
 		ca-certificates \
 	\
-    	&& curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+    	&& curl -qsL https://deb.nodesource.com/setup_6.x | bash - \
 	&& apt-get install -y \
 		git \
 		make \
@@ -26,7 +26,6 @@ RUN set -x \
 		autoconf \
 		automake \
 		wget \
-		curl \
 		sudo \
 		tar \
 		xz-utils \

@@ -74,7 +74,7 @@ run_wget()
     dir=${file%.tar.*}
 
     if [ ! -e $file ]; then
-        wget $url
+        wget -q $url
         if [ $? -ne 0 ]; then
             print_error "wget $file" && exit 1
         fi
