@@ -19,6 +19,7 @@ services:
          - REPOSITORY=git://github.com/Chinachu/Chinachu.git
          - BRANCH=gamma
     container_name: chinachu
+    privileged: true
     ports:
      - "10772:10772"
      - "20772:20772"
