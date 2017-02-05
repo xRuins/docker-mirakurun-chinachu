@@ -38,7 +38,7 @@ RUN set -x \
 	&& git clone https://github.com/stz2012/recpt1 /tmp/recpt1 \
 	&& cd /tmp/recpt1/recpt1 \
 	&& ./autogen.sh \
-	&& ./configure \
+	&& ./configure --with-b25\
 	&& sed -i '/#include <sys\/msg.h>/d' recpt1core.h \
 	&& sed -i -E 's!(#include <sys/msg.h>)!#undef _GNU_SOURCE\n#undef _BSD_SOURCE\n\1!' recpt1.c \
 	&& sed -i -E 's!(#include <sys/msg.h>)!#undef _GNU_SOURCE\n#undef _BSD_SOURCE\n\1!' recpt1ctl.c \

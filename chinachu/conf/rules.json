@@ -1,1 +1,322 @@
-[]
+[
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1i46n9s"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "機動戦士ガンダム　鉄血のオルフェンズ"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1h3amls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "あいまいみー～Ｓｕｒｇｉｃａｌ　Ｆｒｉｅｎｄｓ～"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "variety"
+    ],
+    "channels": [
+      "1i4d2rs"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "有吉反省会"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "variety"
+    ],
+    "channels": [
+      "1i4d2rs"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "月曜から夜ふかし"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "theater"
+    ],
+    "channels": [
+      "1i4d2rs"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "笑点"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1h3amls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "幼女戦記"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "variety"
+    ],
+    "channels": [
+      "1i4axls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "人生のパイセンＴＶ"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1i4axls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "クズの本懐"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "channels": [
+      "1i48sfs"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "相棒"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "BS"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "8ksz"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "冴えない彼女の育てかた"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1h3amls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "境界線上のホライゾンⅡ"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1h3amls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "スクールガールストライカーズ　Animation　Channel"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1i4axls"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "リトルウィッチアカデミア"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1gzhjhs"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "銀魂　烙陽決戦篇"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "BS"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "8ks5"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "『ＡＫＩＢＡ’Ｓ　ＴＲＩＰ　－ＴＨＥ　ＡＮＩＭＡＴＩＯＮ－』"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1i4d2rs"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "ＭＡＮＰＡ"
+    ],
+    "recorded_format": ""
+  },
+  {
+    "types": [
+      "GR"
+    ],
+    "categories": [
+      "anime"
+    ],
+    "channels": [
+      "1i46n9s"
+    ],
+    "hour": {
+      "start": 0,
+      "end": 24
+    },
+    "reserve_titles": [
+      "Ｒｅｗｒｉｔｅ　２ｎｄシーズン"
+    ],
+    "recorded_format": ""
+  }
+]

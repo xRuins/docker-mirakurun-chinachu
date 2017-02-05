@@ -27,4 +27,3 @@
   command: recpt1 --device /dev/pt3video3 <channel> - -
   decoder: arib-b25-stream-test
   isDisabled: false
-
