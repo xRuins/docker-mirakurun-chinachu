@@ -11,7 +11,7 @@ console.error("--------------------------------------------\n");
 //if (process.argv.length <4) return;
 
 //エンコ済みファイル倉庫（最後に"/"必須(※)
-var encodedDir = "/mnt/md127/Recs/";
+var encodedDir = "/usr/local/chinachu/recorded/";
 
 //録画した番組のオブジェクトを得る
 var finishedObj = JSON.parse(process.argv[3]);
@@ -43,7 +43,7 @@ for(var i in recordedObj) {
 var recOpt = "-vcodec libx265 -b:v 16384k";
 
 //var ffmpeg = __dirname + "/usr/bin/ffmpeg";				//←通常の優先度でエンコする
-var ffmpeg = "nice -n 15 " + __dirname + "/usr/bin/ffmpeg"; //←システム全体の負荷を考慮し、エンコの優先度を落とす
+var ffmpeg = "nice -n 15 " + __dirname + "/usr/local/chinachu/usr/bin/ffmpeg"; //←システム全体の負荷を考慮し、エンコの優先度を落とす
 
 //ffmpegの入力ファイルオプション
 var optIn = ' -i ' + '"' + finishedObj.recorded + '"';
