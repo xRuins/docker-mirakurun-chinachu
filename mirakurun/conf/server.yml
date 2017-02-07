@@ -3,4 +3,9 @@ path: /var/run/mirakurun.sock
 port: 40772
 host: ~
 
+
+highWaterMark: 268435456
+epgGatheringInterval: 21600000 # integer (ms)
+epgRetrievalTime: 5400000 # integer (ms)
+
 logLevel: 2
