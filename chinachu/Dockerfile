@@ -6,18 +6,24 @@ ARG REPOSITORY="git://github.com/Chinachu/Chinachu.git"
 ARG BRANCH="master"
 
 COPY ffmpeg_build.sh /usr/local/bin
-#RUN echo 'Acquire::http { Proxy "http://localhost:3142"; };' >> /etc/apt/apt.conf.d/01proxy
+RUN echo 'Acquire::http { Proxy "http://surtr:3142"; };' >> /etc/apt/apt.conf.d/01proxy
 RUN set -x \
+	&& apt-get update \
+    	&& apt-get install -y \
+		curl \
+    	&& curl -qsL https://deb.nodesource.com/setup_6.x | bash - \
 	&& apt-get update \
 	&& apt-get install -y \
 		bash \
-		nodejs \
 		coreutils \
-		curl \
 		procps \
+		nodejs \
 		ca-certificates \
+		# vaapi dependencies
+		libva1 \
+		i965-va-driver \
+		vainfo \
 	\
-    	&& curl -qsL https://deb.nodesource.com/setup_6.x | bash - \
 	&& apt-get install -y \
 		git \
 		make \
@@ -32,41 +38,21 @@ RUN set -x \
 		libc-dev \
 		musl-dev \
 #		eudev-dev \
-		libevent-dev \
-		# ffmpeg deps
-		build-essential \
-		cmake \
-		git \
-		libass-dev \
-		libfreetype6-dev \
-		libgpac-dev \
-		libsdl1.2-dev \
-		libtheora-dev \
-   		libtool \
-		libva-dev \
-		libvdpau-dev \
-		libvorbis-dev \
-		libxcb1-dev \
-		libxcb-shm0-dev \
-		libxcb-xfixes0-dev \
-		mercurial \
-		pkg-config \
-		texi2html \
-		zlib1g-dev
+		libevent-dev
+
 RUN set -x \
-	&& adduser --no-create-home --disabled-password --disabled-login --uid 99 --home /usr/local/chinachu chinachu \
+	&& adduser --disabled-password --uid 99 --home /usr/local/chinachu chinachu \
+	&& rm -rf /usr/local/chinachu \
 	&& mkdir -p /usr/local/chinachu \
 	&& git clone ${REPOSITORY} /usr/local/chinachu \
 	&& chown -R chinachu:chinachu /usr/local/chinachu \
 	&& cd /usr/local/chinachu \
 	&& git checkout ${BRANCH} \
-	&& echo 1 | sudo -u chinachu ./chinachu installer \
+	&& cd /usr/local/chinachu \
+	&& echo 1 | sudo -H -u chinachu ./chinachu installer \
 	&& ./chinachu service operator initscript | sudo -u chinachu tee /tmp/chinachu-operator \
 	&& ./chinachu service wui initscript | sudo -u chinachu tee /tmp/chinachu-wui \
-	&& sudo -u chinachu mkdir log \
-	\
-	# installation of ffmpeg (w/libx265)
-	&& /usr/local/bin/ffmpeg_build.sh \
+	&& sudo -H -u chinachu mkdir log \
 	\
 	&& chown root. /tmp/chinachu-operator /tmp/chinachu-wui \
 	&& chmod u+x /tmp/chinachu-operator /tmp/chinachu-wui \
