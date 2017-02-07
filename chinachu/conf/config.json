@@ -18,12 +18,14 @@
     "wuiStreamer"         : true,
     "wuiFiler"            : true,
     "wuiConfigurator"     : true,
-    "wuiMdnsAdvertisement": false,
+    "wuiMdnsAdvertisement": true,
 
     "mirakurunPath": "http://container-mirakurun:40772/",
 
     "recordedFormat": "[<date:yymmdd-HHMM>][<type><channel>]<title>.m2ts",
 
     "storageLowSpaceThresholdMB": 3200,
-    "storageLowSpaceAction": "remove"
+    "storageLowSpaceAction": "remove",
+
+    "recordedCommand": "/usr/local/bin/recCheck.sh"
 }
